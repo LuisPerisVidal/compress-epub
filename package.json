@@ -1,17 +1,23 @@
 {
   "name": "compress-epub",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "NPM package to compress .epub files",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/LuisPerisVidal/compress-epub"
   },
-
+  "author": "Luis peris (https://luisperis.com)",
+  "bugs": {
+    "url": "https://github.com/LuisPerisVidal/compress-epub"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.12",
+    "sharp": "^0.33.3"
+  }
 }
