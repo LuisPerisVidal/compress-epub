@@ -1,6 +1,6 @@
 {
   "name": "compress-epub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NPM package to compress .epub files",
   "main": "index.js",
   "repository": {

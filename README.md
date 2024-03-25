@@ -36,3 +36,8 @@ await compressEpub('stephenking.epub', {
 });
 
 ```
+
+
+
+## Try online
+You can try it in this page: https://compressepub.com/
