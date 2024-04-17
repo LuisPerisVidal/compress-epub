@@ -11,7 +11,7 @@ const crypto = require('crypto');
 module.exports = async (original_epub, options={}) => {
 
 	const opt = {
-		quality: 10,
+		quality: 9,
 		output: 'buffer',
 		outputDir: '/tmp/out'+crypto.randomBytes(4).toString('hex'),
 		debug: false,
@@ -125,7 +125,7 @@ module.exports = async (original_epub, options={}) => {
 
 		const filesImage = getFilesByExtension(outputDir, ['.jpg', '.jpeg', '.png']);
 	
-		for (const file of filesImage) { await reduceImageQuality(file, 9); }
+		for (const file of filesImage) { await reduceImageQuality(file, opt.quality); }
 
 		const out = await saveNewEpub(output, outputDir);
 
